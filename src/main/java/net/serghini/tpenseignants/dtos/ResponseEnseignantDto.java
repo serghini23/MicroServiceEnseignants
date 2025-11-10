@@ -12,9 +12,9 @@ import lombok.Setter;
 public class ResponseEnseignantDto {
     private Long  id;
     private String nom;
-    private String prénom ;
+    private String prenom ;
     private String CNE;
     private String email;
     private String mot_de_passe ;
-    private String thématique_de_recherche;
+    private String thematique_de_recherche;
 }

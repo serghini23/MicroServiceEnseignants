@@ -17,9 +17,9 @@ public class Enseignant {
     @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
    private Long  id;
    private String nom;
-    private String prénom ;
+    private String prenom ;
    private String CNE;
     private String email;
     private String mot_de_passe ;
-    private String thématique_de_recherche;
+    private String thematique_de_recherche;
 }
