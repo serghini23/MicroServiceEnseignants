@@ -32,6 +32,7 @@ public class EnseignantServiceImpl implements EnseignantService {
         ResponseEnseignantDto response = enseignantMapper.entity_to_dto(enseignant);
 
 
+
         return response;
     }
 
@@ -61,6 +62,7 @@ public class EnseignantServiceImpl implements EnseignantService {
         if (new_enseignant.getCNE()!=null)enseignant1.setCNE(new_enseignant.getCNE());
         if (new_enseignant.getMot_de_passe()!=null)enseignant1.setMot_de_passe(new_enseignant.getMot_de_passe());
         if (new_enseignant.getThematique_de_recherche()!=null)enseignant1.setThematique_de_recherche(new_enseignant.getThematique_de_recherche());
+        if (new_enseignant.getIdChercheur()!=null)enseignant1.setIdChercheur(enseignant1.getId());
         Enseignant saved = enseignantsRepository.save(enseignant1);
 
 

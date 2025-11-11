@@ -16,4 +16,6 @@ public class RequestEnseignantsDto {
     private String email;
     private String mot_de_passe ;
     private String thematique_de_recherche;
+    private Long idChercheur;
+
 }
